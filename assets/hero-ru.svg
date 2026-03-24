@@ -1,0 +1,7 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='900' height='420' viewBox='0 0 900 420'>
+  <rect width='900' height='420' fill='#e8fff4'/>
+  <rect x='40' y='40' width='820' height='340' rx='20' fill='#ffffff' stroke='#0d9488'/>
+  <text x='80' y='130' font-size='44' font-family='Arial' fill='#1b2430'>Polyglot Watchdog Demo</text>
+  <text x='80' y='190' font-size='28' font-family='Arial' fill='#0d9488'>Проверка качества локализации</text>
+  <text x='80' y='250' font-size='24' font-family='Arial' fill='#5a6778'>Быстро находите ошибки в переводе.</text>
+</svg>
