@@ -1,0 +1,8 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='800' height='360' viewBox='0 0 800 360'>
+  <rect width='800' height='360' fill='#ffffff'/>
+  <rect x='20' y='20' width='760' height='320' rx='14' fill='#eef2ff' stroke='#4f46e5'/>
+  <text x='55' y='75' font-size='28' font-family='Arial' fill='#1b2430'>Problem-Heatmap</text>
+  <text x='55' y='115' font-size='20' font-family='Arial' fill='#5a6778'>Deutsch: 12 Warnungen</text>
+  <text x='55' y='145' font-size='20' font-family='Arial' fill='#5a6778'>Russisch: 9 Warnungen</text>
+  <text x='55' y='175' font-size='20' font-family='Arial' fill='#5a6778'>Englisch: 1 Warnung</text>
+</svg>

@@ -32,4 +32,16 @@ This file documents every intentionally planted localization/content bug.
 | B26 | `/ru/pricing.html` | `[data-testid="pricing-image-2"]` figcaption | Caption mismatch quantity | Badge says 200+ teams | Caption says only 50 teams |
 | B27 | `/ru/pricing.html` | Comparison table support row, Starter cell | Untranslated English word | Russian word for email | "Email" |
 | B28 | `/ru/pricing.html` | Footer pricing link text | Header/footer language inconsistency | Russian "Цены" | German "Preise" |
+| B29 | `/de/pricing.html` | `[data-testid="pricing-image-ocr-only-de"]` + `../assets/badge-de.svg` | OCR-only image text mismatch | German asset should show German text inside image while keeping localized metadata | File path, alt and caption are German, but visible SVG text remains English (`Unlimited checks`) |
+| B30 | `/de/index.html` | `[data-testid="hero-cta-secondary"]` nested wrapper spans | Structural drift / matching-risk case | Visible CTA meaning should match EN baseline and remain "Demo buchen" | Meaning stays correct, but markup intentionally differs via extra nested `<span>` wrappers |
+| B31 | `/de/pricing.html` | Comparison table screenshots row, Pro cell | Formatting / locale-convention bug | German thousands formatting should use dot (`10.000`) | Value is formatted as `10,000` |
 
+
+## Positive controls
+
+These are intentional correct-localization control cases used to verify that German OCR/image checks can also pass when content is correct.
+
+| ID | Page path | Selector / asset path | Type | Expected correct behavior | Actual implemented behavior |
+|---|---|---|---|---|---|
+| PC01 | `/de/pricing.html` | `[data-testid="pricing-image-de-control-1"]` + `../assets/screenshot-de-correct.svg` | Correct German image control | Asset text, alt text, and caption should all be localized in German | Image text is German (`Problem-Heatmap`, warning lines), with matching German alt and caption |
+| PC02 | `/de/pricing.html` | `[data-testid="pricing-image-de-control-2"]` + `../assets/badge-de-correct.svg` | Correct German image control | Badge text, alt text, and caption should all be localized in German | Badge contains German text (`Über 200 Teams`), with matching German alt and caption |
