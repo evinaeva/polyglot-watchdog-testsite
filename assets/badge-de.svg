@@ -1,0 +1,5 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='360' height='180' viewBox='0 0 360 180'>
+  <rect width='360' height='180' rx='18' fill='#1c9b65'/>
+  <text x='30' y='84' font-size='30' font-family='Arial' fill='white'>Unlimited checks</text>
+  <text x='30' y='122' font-size='22' font-family='Arial' fill='white'>for release QA</text>
+</svg>
