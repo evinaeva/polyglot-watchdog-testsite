@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Polyglot Watchdog Demo - Home</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="./index.html" data-testid="brand-link">Polyglot Watchdog Demo</a>
+      <nav aria-label="Main navigation" data-testid="header-nav">
+        <ul class="nav-list">
+          <li><a href="./index.html" data-testid="nav-home">Home</a></li>
+          <li><a href="./pricing.html" data-testid="nav-pricing">Pricing</a></li>
+        </ul>
+      </nav>
+      <ul class="lang-list" aria-label="Language switcher" data-testid="language-switcher">
+        <li><a href="../en/index.html">EN</a></li>
+        <li><a href="../de/index.html">DE</a></li>
+        <li><a href="../ru/index.html">RU</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <h1 data-testid="hero-title">Ship localized content with confidence</h1>
+          <p>Polyglot Watchdog Demo helps QA teams detect translation, layout, and screenshot regressions before every release.</p>
+          <div class="button-row">
+            <button class="btn" data-testid="hero-cta-primary">Start free trial</button>
+            <button class="btn secondary" data-testid="hero-cta-secondary">Book a demo</button>
+          </div>
+        </div>
+        <img src="../assets/hero-en.svg" alt="Dashboard illustration for localization checks" data-testid="hero-image">
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2>Trusted by teams</h2>
+        <div class="logos" data-testid="trusted-logos">
+          <div class="logo-chip">Northwind Apps</div>
+          <div class="logo-chip">Orbit Commerce</div>
+          <div class="logo-chip">Bluefin Health</div>
+          <div class="logo-chip">Acme Studio</div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2>Features</h2>
+        <div class="cards">
+          <article class="card" data-testid="feature-card-1">
+            <h3>Visual diff scans</h3>
+            <p>Detect UI shifts across 40 locales with screenshot baselines.</p>
+          </article>
+          <article class="card" data-testid="feature-card-2">
+            <h3>OCR text checks</h3>
+            <p>Find untranslated strings embedded inside marketing images.</p>
+          </article>
+          <article class="card" data-testid="feature-card-3">
+            <h3>Release reports</h3>
+            <p>Share actionable issues with linguists and developers.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container media-grid">
+        <figure>
+          <img src="../assets/screenshot-en.svg" alt="Heatmap screen showing language QA status" data-testid="screenshot-image">
+          <figcaption class="muted">Weekly quality trend across active locales.</figcaption>
+        </figure>
+        <img src="../assets/badge-en.svg" alt="Green badge saying Trusted by 200+ global teams" data-testid="badge-image">
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2>Interactive QA controls</h2>
+        <div class="demo-row">
+          <div class="dropdown" data-testid="dropdown-demo">
+            <button class="btn secondary" data-testid="dropdown-toggle" aria-haspopup="true" aria-expanded="false" aria-controls="qa-dropdown-en">Choose QA check</button>
+            <div id="qa-dropdown-en" class="dropdown-menu" data-testid="dropdown-menu">
+              <button type="button" data-testid="dropdown-option-1">Terminology consistency</button>
+              <button type="button" data-testid="dropdown-option-2">Screenshot OCR audit</button>
+              <button type="button" data-testid="dropdown-option-3">Currency format validation</button>
+            </div>
+          </div>
+
+          <div class="tooltip-wrap">
+            <button class="btn secondary" data-testid="tooltip-target" aria-describedby="tooltip-en">What is this?</button>
+            <div id="tooltip-en" class="tooltip-box" role="tooltip" data-testid="help-tooltip">Tip: run this check before every Friday deploy.</div>
+          </div>
+
+          <button class="btn" data-testid="open-modal-button">Open release note modal</button>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2>FAQ snippet</h2>
+        <p><strong>How long does setup take?</strong> Most teams finish setup in 20 minuts.</p>
+      </div>
+    </section>
+  </main>
+
+  <div class="modal" role="dialog" aria-modal="true" aria-hidden="true" data-testid="demo-modal">
+    <div class="modal-content">
+      <h3 data-testid="modal-title">Release Readiness Summary</h3>
+      <p data-testid="modal-body">3 high-priority translation issues were detected in German marketing pages.</p>
+      <button class="btn" data-testid="close-modal-button">Close</button>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <small>© 2026 Polyglot Watchdog Demo</small>
+      <ul class="footer-links" data-testid="footer-links">
+        <li><a href="./pricing.html">Pricing</a></li>
+        <li><a href="./index.html">Docs</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

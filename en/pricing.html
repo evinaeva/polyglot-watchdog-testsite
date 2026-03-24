@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Polyglot Watchdog Demo - Pricing</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="./index.html" data-testid="brand-link">Polyglot Watchdog Demo</a>
+      <nav aria-label="Main navigation" data-testid="header-nav">
+        <ul class="nav-list">
+          <li><a href="./index.html" data-testid="nav-home">Home</a></li>
+          <li><a href="./pricing.html" data-testid="nav-pricing">Pricing</a></li>
+        </ul>
+      </nav>
+      <ul class="lang-list" aria-label="Language switcher" data-testid="language-switcher">
+        <li><a href="../en/pricing.html">EN</a></li>
+        <li><a href="../de/pricing.html">DE</a></li>
+        <li><a href="../ru/pricing.html">RU</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero pricing-hero">
+      <div class="container hero-grid">
+        <div>
+          <h1 data-testid="hero-title">Pricing built for localization QA workflows</h1>
+          <p>Pick a plan that matches your release cadence and language count.</p>
+        </div>
+        <img src="../assets/pricing-en.svg" alt="Pricing banner with monthly billing text" data-testid="pricing-hero-image">
+      </div>
+    </section>
+
+    <section>
+      <div class="container pricing-grid">
+        <article class="card" data-testid="pricing-card-starter">
+          <h3>Starter</h3>
+          <p class="price">$29</p>
+          <p>/month • up to 3 locales</p>
+          <button class="btn secondary">Choose Starter</button>
+        </article>
+        <article class="card" data-testid="pricing-card-pro">
+          <h3>Pro</h3>
+          <p class="price">$79</p>
+          <p>/month • up to 12 locales</p>
+          <button class="btn">Start free trial</button>
+        </article>
+        <article class="card" data-testid="pricing-card-enterprise">
+          <h3>Enterprise</h3>
+          <p class="price">Contact us</p>
+          <p>Unlimited locales and SSO</p>
+          <button class="btn secondary">Talk to sales</button>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <div class="container media-grid">
+        <img src="../assets/screenshot-en.svg" alt="Table-like screenshot with warning counts" data-testid="pricing-image-1">
+        <img src="../assets/badge-en.svg" alt="Badge showing trusted teams" data-testid="pricing-image-2">
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2>Plan comparison</h2>
+        <table data-testid="comparison-table">
+          <thead>
+            <tr><th>Feature</th><th>Starter</th><th>Pro</th><th>Enterprise</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Screenshots / month</td><td>1,000</td><td>10,000</td><td>Unlimited</td></tr>
+            <tr><td>OCR checks</td><td>Basic</td><td>Advanced</td><td>Advanced</td></tr>
+            <tr><td>Support</td><td>Email</td><td>Priority email</td><td>Dedicated manager</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2>FAQ snippet</h2>
+        <p><strong>Can I change plans later?</strong> Yes, upgrades and downgrades apply at the next billing cycle.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <small>© 2026 Polyglot Watchdog Demo</small>
+      <ul class="footer-links" data-testid="footer-links">
+        <li><a href="./pricing.html">Pricing</a></li>
+        <li><a href="./index.html">Docs</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>
