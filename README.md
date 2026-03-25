@@ -36,6 +36,9 @@ This repository intentionally includes **both correct and incorrect localized co
 - `de/pricing.html`
 - `ru/index.html`
 - `ru/pricing.html`
+- `en/test.html`
+- `de/test.html`
+- `ru/test.html`
 
 ## Run locally
 
@@ -55,9 +58,14 @@ Pricing pages:
 - http://localhost:4173/de/pricing.html
 - http://localhost:4173/ru/pricing.html
 
+Test sanity pages:
+- http://localhost:4173/en/test.html
+- http://localhost:4173/de/test.html
+- http://localhost:4173/ru/test.html
+
 ## Manual click-through checklist
 
-1. Open each `/index.html` and `/pricing.html` page.
+1. Open each `/index.html`, `/pricing.html`, and `/test.html` page.
 2. Validate top navigation and language switcher links.
 3. On each home page, test:
    - dropdown button and options

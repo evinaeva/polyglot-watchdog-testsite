@@ -35,6 +35,12 @@ This file documents every intentionally planted localization/content bug.
 | B29 | `/de/pricing.html` | `[data-testid="pricing-image-ocr-only-de"]` + `../assets/badge-de.svg` | OCR-only image text mismatch | German asset should show German text inside image while keeping localized metadata | File path, alt and caption are German, but visible SVG text remains English (`Unlimited checks`) |
 | B30 | `/de/index.html` | `[data-testid="hero-cta-secondary"]` nested wrapper spans | Structural drift / matching-risk case | Visible CTA meaning should match EN baseline and remain "Demo buchen" | Meaning stays correct, but markup intentionally differs via extra nested `<span>` wrappers |
 | B31 | `/de/pricing.html` | Comparison table screenshots row, Pro cell | Formatting / locale-convention bug | German thousands formatting should use dot (`10.000`) | Value is formatted as `10,000` |
+| B32 | `/en/test.html` | `[data-testid="test-line-2"]` | Typo in sanity text line | "Localization check passed." | "Localization chek passed." |
+| B33 | `/en/test.html` | `[data-testid="test-image-wrong"]` (`../assets/badge-ru.svg`) | Wrong-language image on EN page | English image text expected | Russian badge image is used |
+| B34 | `/de/test.html` | `[data-testid="test-line-2"]` | Typo in sanity text line | "Lokalisierung ist bereit." | "Lokalisierng ist bereit." |
+| B35 | `/de/test.html` | `[data-testid="test-image-wrong"]` (`../assets/badge-en.svg`) | Wrong-language image on DE page | German image text expected | English badge image is used |
+| B36 | `/ru/test.html` | `[data-testid="test-line-2"]` | Typo in sanity text line | "Локализация готова." | "Локализаця готова." |
+| B37 | `/ru/test.html` | `[data-testid="test-image-wrong"]` (`../assets/badge-de-correct.svg`) | Wrong-language image on RU page | Russian image text expected | German badge image is used |
 
 
 ## Positive controls

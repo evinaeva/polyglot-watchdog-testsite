@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Polyglot Watchdog Demo - Test</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="./index.html" data-testid="brand-link">Polyglot Watchdog Demo</a>
+      <nav aria-label="Hauptnavigation" data-testid="header-nav">
+        <ul class="nav-list">
+          <li><a href="./index.html" data-testid="nav-home">Start</a></li>
+          <li><a href="./pricing.html" data-testid="nav-pricing">Preise</a></li>
+          <li><a href="./test.html" data-testid="nav-test">Test</a></li>
+        </ul>
+      </nav>
+      <ul class="lang-list" aria-label="Sprachumschalter" data-testid="language-switcher">
+        <li><a href="../en/test.html">EN</a></li>
+        <li><a href="../de/test.html">DE</a></li>
+        <li><a href="../ru/test.html">RU</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <div class="container" data-testid="test-page-block">
+        <h1 data-testid="test-page-title">DE Sanity-Testseite</h1>
+        <p data-testid="test-line-1">Lokalisierung ist bereit.</p>
+        <p data-testid="test-line-2">Lokalisierng ist bereit.</p>
+        <div class="media-grid" data-testid="test-images-block">
+          <img src="../assets/badge-de-correct.svg" alt="Korrektes deutsches Testbild" data-testid="test-image-correct">
+          <img src="../assets/badge-en.svg" alt="Falsches Bild für die deutsche Seite" data-testid="test-image-wrong">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <small>© 2026 Polyglot Watchdog Demo</small>
+      <ul class="footer-links" data-testid="footer-links">
+        <li><a href="./pricing.html">Preise</a></li>
+        <li><a href="./index.html">Dokumentation</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>

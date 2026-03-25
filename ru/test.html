@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Polyglot Watchdog Demo - Тест</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="./index.html" data-testid="brand-link">Polyglot Watchdog Demo</a>
+      <nav aria-label="Основная навигация" data-testid="header-nav">
+        <ul class="nav-list">
+          <li><a href="./index.html" data-testid="nav-home">Главная</a></li>
+          <li><a href="./pricing.html" data-testid="nav-pricing">Цены</a></li>
+          <li><a href="./test.html" data-testid="nav-test">Тест</a></li>
+        </ul>
+      </nav>
+      <ul class="lang-list" aria-label="Переключатель языка" data-testid="language-switcher">
+        <li><a href="../en/test.html">EN</a></li>
+        <li><a href="../de/test.html">DE</a></li>
+        <li><a href="../ru/test.html">RU</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <div class="container" data-testid="test-page-block">
+        <h1 data-testid="test-page-title">RU Тестовая страница</h1>
+        <p data-testid="test-line-1">Локализация готова.</p>
+        <p data-testid="test-line-2">Локализаця готова.</p>
+        <div class="media-grid" data-testid="test-images-block">
+          <img src="../assets/badge-ru.svg" alt="Корректное русское тестовое изображение" data-testid="test-image-correct">
+          <img src="../assets/badge-de-correct.svg" alt="Неподходящее изображение для русской страницы" data-testid="test-image-wrong">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <small>© 2026 Polyglot Watchdog Demo</small>
+      <ul class="footer-links" data-testid="footer-links">
+        <li><a href="./pricing.html">Цены</a></li>
+        <li><a href="./index.html">Документация</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>
